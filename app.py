@@ -168,12 +168,6 @@ def load_provincial_step_data():
 # AUTHENTICATION
 # ============================================================================
 
-def check_password():
-    if 'authenticated' not in st.session_state:
-        st.session_state.authenticated = False
-    if st.session_state.authenticated:
-        return True
-
     st.markdown(f"""
     <div style="text-align: center; padding: 60px 20px;">
         <h1 style="color: {ON_GREEN}; font-size: 3rem; margin-bottom: 10px;">VERA-ON</h1>
